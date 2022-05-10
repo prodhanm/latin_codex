@@ -13,6 +13,6 @@ class Codex:
             else:
                 encrypted_str += chr(((ord(char) + self.step - 97) % 26) + 97)
         return encrypted_str
-text1 = Codex.encrypt_method("Trustn01!", 2)
-print(text1.text, text1.step)
+text1 = Codex("Trustn01!", 2)
+print(text1.encrypt_method())
 
